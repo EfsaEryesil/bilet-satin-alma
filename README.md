@@ -63,13 +63,6 @@ http://localhost:8080
 
 
 
-🧑‍💻 Geliştirici
-
-👩‍💻  Zehra Efsa Eryeşil
-
-📫 GitHub: https://github.com/EfsaEryesil
-
-
 
 
 ## ✅ Kurulum Sonrası
@@ -87,12 +80,30 @@ http://localhost:8080
 💡 **Not:**  
 - Admin tarafından tanımlanan kuponlar tüm firmalarda geçerlidir.  
 - Firma adminleri yalnızca kendi firmalarına ait kupon ve seferleri yönetebilir.  
-- Kullanıcı rolleri, login olduktan sonra otomatik olarak belirlenir.  
+
+
+
+
+
+
+## 🧑‍💻 Geliştirici :
+
+👩‍💻  Zehra Efsa Eryeşil
+
+📫 GitHub: https://github.com/EfsaEryesil
+
+
+
+
+
+
+
 
 
 
 
  
+
 
 
 
