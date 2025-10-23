@@ -1,5 +1,4 @@
 
-version: "3.8"
 services:
   web:
     build: .
@@ -47,19 +46,19 @@ require __DIR__.'/vendor/autoload.php';
 require __DIR__.'/src/db.php';
 $pdo = db();
 $sql = [
-  // kullanıcılar
+  
   "CREATE TABLE IF NOT EXISTS users (id INTEGER PRIMARY KEY, name TEXT, email TEXT UNIQUE, password TEXT, role TEXT CHECK(role in ('user','firm_admin','admin')) DEFAULT 'user', credit INTEGER DEFAULT 2000, firm_id INTEGER)",
-  // firmalar
+
   "CREATE TABLE IF NOT EXISTS firms (id INTEGER PRIMARY KEY, name TEXT UNIQUE)",
-  // seferler
+
   "CREATE TABLE IF NOT EXISTS trips (id INTEGER PRIMARY KEY, firm_id INTEGER, from_city TEXT, to_city TEXT, date TEXT, time TEXT, price INTEGER, seat_count INTEGER)",
-  // biletler
+ 
   "CREATE TABLE IF NOT EXISTS tickets (id INTEGER PRIMARY KEY, user_id INTEGER, trip_id INTEGER, seat_no INTEGER, price_paid INTEGER, created_at TEXT, status TEXT CHECK(status in ('active','canceled')) DEFAULT 'active')",
-  // kuponlar
+  
   "CREATE TABLE IF NOT EXISTS coupons (id INTEGER PRIMARY KEY, code TEXT UNIQUE, percent INTEGER, usage_limit INTEGER, used INTEGER DEFAULT 0, expires_at TEXT)"
 ];
 foreach ($sql as $s) { $pdo->exec($s); }
-// örnek admin + firma admin + user
+
 $hash = password_hash('123456', PASSWORD_DEFAULT);
 $pdo->exec("INSERT OR IGNORE INTO users(id,name,email,password,role) VALUES(1,'Admin','admin@example.com','$hash','admin')");
 $pdo->exec("INSERT OR IGNORE INTO firms(id,name) VALUES(1,'Yavuzlar Turizm')");
@@ -110,7 +109,7 @@ function buy_ticket($user_id,$trip_id,$seat_no,$coupon_code=null){
   $pdo=db();
   $t=$pdo->prepare("SELECT * FROM trips WHERE id=?"); $t->execute([$trip_id]); $trip=$t->fetch(PDO::FETCH_ASSOC);
   if(!$trip) throw new Exception('Sefer yok');
-  // koltuk dolu mu?
+
   $st=$pdo->prepare("SELECT COUNT(*) FROM tickets WHERE trip_id=? AND seat_no=? AND status='active'");
   $st->execute([$trip_id,$seat_no]);
   if($st->fetchColumn()>0) throw new Exception('Koltuk dolu');
@@ -122,7 +121,7 @@ function buy_ticket($user_id,$trip_id,$seat_no,$coupon_code=null){
       $pdo->prepare("UPDATE coupons SET used=used+1 WHERE id=?")->execute([$cp['id']]);
     }
   }
-  // yeterli kredi?
+  
   $u=$pdo->prepare("SELECT credit FROM users WHERE id=?"); $u->execute([$user_id]); $credit=(int)$u->fetchColumn();
   if($credit < $price) throw new Exception('Yetersiz kredi');
   $pdo->beginTransaction();
