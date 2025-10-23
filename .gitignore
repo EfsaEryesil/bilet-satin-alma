@@ -1,0 +1,21 @@
+# PHP / Composer
+vendor/
+composer.lock
+
+# SQLite veritabanı dosyaları
+app/data/*.sqlite
+app/data/database.sqlite
+
+# Log ve geçici dosyalar
+*.log
+*.bak
+*.zip
+*.rar
+
+# IDE / Editor dosyaları
+.vscode/
+.idea/
+*.swp
+
+# Geçici test veya kurulum scriptleri
+bilet_satin_alma_dockerli_php_sqlite_starter_calisir_iskelet.sh
