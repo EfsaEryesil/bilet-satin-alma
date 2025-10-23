@@ -65,66 +65,28 @@ http://localhost:8080
 📫 GitHub: https://github.com/EfsaEryesil
 
 
-✅ Kurulum Sonrası:
+## ✅ Kurulum Sonrası
 
-👑 Admin Hesabı
-E-posta: admin@example.com
-Şifre: 123456
-Admin tarafından oluşturulan %50 indirimli genel kupon kodu: 7899
-Yetkiler: Yeni firmalar oluşturabilir, düzenleyebilir, silebilir.
-Firma admin kullanıcılarını oluşturabilir ve firmalara atayabilir.
+| Rol | E-posta | Şifre | Kupon Kodu | Yetkiler |
+|------|----------|--------|--------------|-----------|
+| 👑 **Admin** | `admin@example.com` | `123456` | **7899**(%50 indirimli) | - Yeni firmalar oluşturabilir, düzenleyebilir, silebilir. <br> - Firma admin kullanıcılarını oluşturabilir ve firmalara atayabilir. <br> -  |
+| 🏢 **Firma Admin (Metro)** | `metro@example.com` | `123456` | **777** | - Sadece kendi firmasına ait seferleri yönetebilir. <br> - Yeni sefer oluşturabilir, düzenleyebilir veya silebilir. <br> - Firma özelinde indirim kuponları tanımlayabilir. |
+| 🏢 **Firma Admin (Elazığ Murat Turizm)** | `murat@murat.com` | `123456` | **2323** | - Kendi firmasına ait seferleri yönetebilir. <br> - Yeni sefer oluşturabilir, düzenleyebilir veya silebilir. <br> - Firma kuponlarını düzenleyebilir. |
+| 🏢 **Firma Admin (Yavuzlar Turizm)** | `yavuzlar@team.com` | `123456` | **2025** | - Yalnızca kendi firmasına ait seferleri yönetebilir. <br> - Sefer ve kupon işlemlerini düzenleyebilir. |
+| 👤 **User (Yolcu)** | `ornekkullanici@ornek.com` | `123456` | — | - Seferleri arayabilir ve bilet satın alabilir. <br> - Kupon kodu varsa indirimden yararlanabilir. <br> - Satın aldığı biletleri görüntüleyebilir, iptal edebilir. <br> - Biletini **PDF** olarak indirebilir. <br> - Kalkışa 1 saatten az kaldıysa iptal yapılamaz. <br> - Her kullanıcıya otomatik olarak **20.000₺ sanal kredi** tanımlanmıştır. |
 
+---
 
-🏢 Örnek Firma hesabı:
-E-posta: metro@example.com  
+💡 **Not:**  
+- Admin tarafından tanımlanan kuponlar tüm firmalarda geçerlidir.  
+- Firma adminleri yalnızca kendi firmalarına ait kupon ve seferleri yönetebilir.  
+- Kullanıcı rolleri, login olduktan sonra otomatik olarak belirlenir.  
 
-Şifre: 123456
-
-Metro Firma Kupon Kodu : 777
-
-Yetkiler:Sadece kendi firmasına ait seferleri yönetebilir.
-
-Yeni seferler oluşturabilir, düzenleyebilir veya silebilir. 
-
-Kendi firmasına özel indirim kuponları tanımlayabilir.
-
-
-🏢 Örnek Firma hesabı 2 :
-E-posta: murat@murat.com
-
-Şifre: 123456
-
-Elazığ Murat Turizm Firma Kupon Kodu : 2323
-
-
-🏢 Örnek Firma hesabı 3 :
-E-posta: yavuzlar@team.com
-
-Şifre: 123456
-
-Yavuzlar Turizm Firma Kupon Kodu : 2025
-
-
-👤 Örnek User hesabı:
-E-posta: ornekkullanici@ornek.com 
-
-Şifre: 123456
-
-NOT:Her User'a otomatik 20.000 sanal kredi verilmiştir.
-
-Yetkiler:Seferleri arayabilir ve bilet satın alabilir.
-
-Kupon kodu varsa indirimden yararlanabilir.
-
-Satın aldığı biletleri görüntüleyebilir ve iptal edebilir.
-
-Biletini PDF olarak indirebilir.
-
-Kalkışa 1 saatten az kaldıysa iptal işlemi yapılamaz.
 
 
 
  
+
 
 
 
