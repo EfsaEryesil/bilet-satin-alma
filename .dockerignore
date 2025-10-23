@@ -1,0 +1,7 @@
+.git
+.gitignore
+vendor
+node_modules
+*.log
+app/data/*.sqlite*
+app/data/database.sqlite
