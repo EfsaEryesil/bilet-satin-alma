@@ -61,9 +61,15 @@ http://localhost:8080
 🟢 Docker ortamı aktif olduğunda, proje Apache üzerinde /app/public dizininden otomatik olarak yüklenir.
 
 
+
+
 🧑‍💻 Geliştirici
+
 👩‍💻  Zehra Efsa Eryeşil
+
 📫 GitHub: https://github.com/EfsaEryesil
+
+
 
 
 ## ✅ Kurulum Sonrası
@@ -87,6 +93,7 @@ http://localhost:8080
 
 
  
+
 
 
 
