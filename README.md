@@ -88,10 +88,13 @@ http://localhost:8080
 
 ## 🧑‍💻 Geliştirici :
 
+
+
 👩‍💻  Zehra Efsa Eryeşil
 
 📫 GitHub: https://github.com/EfsaEryesil
 
+📫 Linkedin: www.linkedin.com/in/zehra-efsa-eryeşil-499b10245
 
 
 
@@ -103,6 +106,7 @@ http://localhost:8080
 
 
  
+
 
 
 
