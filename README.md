@@ -69,7 +69,7 @@ http://localhost:8080
 
 | Rol | E-posta | Şifre | Kupon Kodu | Yetkiler |
 |------|----------|--------|--------------|-----------|
-| 👑 **Admin** | `admin@example.com` | `123456` | **7899**(%50 indirimli) | - Yeni firmalar oluşturabilir, düzenleyebilir, silebilir. <br> - Firma admin kullanıcılarını oluşturabilir ve firmalara atayabilir. <br>  |
+| 👑 **Admin** | `admin@example.com` | `123456` | **7899**(%50 indirimli) | - Yeni firmalar oluşturabilir, düzenleyebilir, silebilir. <br> - Firma admin kullanıcılarını oluşturabilir ve firmalara atayabilir. <br> - Tüm firmalarda geçerli kupon işlemlerini düzenleyebilir. |
 | 🏢 **Firma Admin (Metro)** | `metro@example.com` | `123456` | **777** | - Sadece kendi firmasına ait seferleri yönetebilir. <br> - Yeni sefer oluşturabilir, düzenleyebilir veya silebilir. <br> - Firma özelinde indirim kuponları tanımlayabilir. |
 | 🏢 **Firma Admin (Elazığ Murat Turizm)** | `murat@murat.com` | `123456` | **2323** | - Kendi firmasına ait seferleri yönetebilir. <br> - Yeni sefer oluşturabilir, düzenleyebilir veya silebilir. <br> - Firma kuponlarını düzenleyebilir. |
 | 🏢 **Firma Admin (Yavuzlar Turizm)** | `yavuzlar@team.com` | `123456` | **2025** | - Yalnızca kendi firmasına ait seferleri yönetebilir. <br> - Sefer ve kupon işlemlerini düzenleyebilir. |
@@ -103,6 +103,7 @@ http://localhost:8080
 
 
  
+
 
 
 
