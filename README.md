@@ -57,6 +57,7 @@ docker compose up -d
 
 # 4. Tarayıcıdan açınız
 http://localhost:8080
+
 🟢 Docker ortamı aktif olduğunda, proje Apache üzerinde /app/public dizininden otomatik olarak yüklenir.
 
 
@@ -86,6 +87,7 @@ http://localhost:8080
 
 
  
+
 
 
 
