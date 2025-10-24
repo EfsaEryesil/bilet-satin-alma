@@ -58,6 +58,8 @@ docker compose up -d
 # 4. Tarayıcıdan açınız
 http://localhost:8080
 
+
+
 🟢 Docker ortamı aktif olduğunda, proje Apache üzerinde /app/public dizininden otomatik olarak yüklenir.
 
 
@@ -79,7 +81,8 @@ http://localhost:8080
 
 💡 **Not:**  
 - Admin tarafından tanımlanan kuponlar tüm firmalarda geçerlidir.  
-- Firma adminleri yalnızca kendi firmalarına ait kupon ve seferleri yönetebilir.  
+- Firma adminleri yalnızca kendi firmalarına ait kupon ve seferleri yönetebilir.
+- Proje, Docker uyumlu olarak yapılandırılmıştır. Gereksiz test dosyaları .gitignore ve .dockerignore ile hariç tutulmuştur.
 
 
 
@@ -106,6 +109,7 @@ http://localhost:8080
 
 
  
+
 
 
 
